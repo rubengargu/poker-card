@@ -25,8 +25,15 @@ let valores = [
   "K",
   "A"
 ];
-let palo = ["corazon", "pica", " trebol", "diamante"];
+let palo = [
+  "<i class='fa-solid fa-heart' style='color: #f90b0b;'></i>",
+  "<i class='fa-solid fa-diamond' style='color: #f90b0b;'></i>",
+  "<i class='fa-sharp fa-solid fa-power-off'></i>",
+  "<i class='fa-solid fa-dice-six' style='color: #0d0d0d;'></i>"
+];
 
 let valorRandom = valores[Math.floor(Math.random() * valores.length)];
 let paloRandom = palo[Math.floor(Math.random() * palo.length)];
 console.log(valorRandom, paloRandom);
+document.querySelector("#valorFinal").innerHTML = valorRandom;
+document.querySelector("#paloFinal").innerHTML = paloRandom;
