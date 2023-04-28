@@ -37,3 +37,4 @@ let paloRandom = palo[Math.floor(Math.random() * palo.length)];
 console.log(valorRandom, paloRandom);
 document.querySelector("#valorFinal").innerHTML = valorRandom;
 document.querySelector("#paloFinal").innerHTML = paloRandom;
+document.querySelector("#paloFinalDown").innerHTML = paloRandom;
